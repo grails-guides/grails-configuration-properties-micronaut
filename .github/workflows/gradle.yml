@@ -18,9 +18,8 @@ jobs:
           key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle') }}
           restore-keys: |
             ${{ runner.os }}-gradle-
-      - uses: browser-actions/setup-chrome@latest
       - name: Run script
-        run: chrome --version
+        run: ./githubactions-build.sh
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIT_NAME: ${{ secrets.GIT_NAME }}
