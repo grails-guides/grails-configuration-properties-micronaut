@@ -20,7 +20,7 @@ jobs:
             ${{ runner.os }}-gradle-
       - uses: browser-actions/setup-chrome@latest
       - name: Run script
-        run: ./githubactions-build.sh
+        run: chrome --version
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           GIT_NAME: ${{ secrets.GIT_NAME }}
