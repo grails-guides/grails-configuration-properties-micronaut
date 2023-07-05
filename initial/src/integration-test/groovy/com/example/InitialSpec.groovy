@@ -1,5 +1,5 @@
 package com.example
-import grails.gormImpl.transactions.Rollback
+import grails.gorm.transactions.Rollback
 import grails.testing.mixin.integration.Integration
 
 import geb.spock.*
