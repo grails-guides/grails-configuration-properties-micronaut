@@ -3,7 +3,7 @@ training:
 gettingStarted:
   title: Getting Started
   requirements: What you will need
-  solution: Solution
+  howto: How to complete the guide
 writingTheApp:
   title: Writing the App
   configurationProperties: Configuration Properties
