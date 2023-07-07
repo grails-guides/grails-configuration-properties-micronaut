@@ -65,6 +65,7 @@ dependencies {
     testImplementation("org.seleniumhq.selenium:selenium-remote-driver:4.10.0")
     testImplementation("org.seleniumhq.selenium:selenium-support:4.10.0")
     testImplementation("org.spockframework:spock-core")
+    testRuntimeOnly("org.seleniumhq.selenium:htmlunit-driver:4.10.0")
     testRuntimeOnly("org.seleniumhq.selenium:selenium-chrome-driver:4.10.0")
     testRuntimeOnly("org.seleniumhq.selenium:selenium-firefox-driver:4.10.0")
     testImplementation("io.micronaut:micronaut-http-client")

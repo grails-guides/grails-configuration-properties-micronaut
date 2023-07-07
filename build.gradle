@@ -23,3 +23,7 @@ htmlSanityCheck {
     sourceDir = new File("${project.buildDir}/docs")
 }
 publishGuide.finalizedBy(htmlSanityCheck)
+
+subprojects.each {
+    apply from: 'gradle/testVerbose.gradle'
+}
