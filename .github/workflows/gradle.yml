@@ -1,7 +1,8 @@
 name: Java CI with Gradle
 on:
   push:
-    branches: [ master ]
+    branches: [ grails5 ]
+  workflow_dispatch:
 jobs:
   build:
     runs-on: ubuntu-latest
