@@ -1,13 +1,28 @@
-plugins {
-    id 'org.asciidoctor.convert' version '1.5.3'
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "gradle.plugin.org.aim42:htmlSanityCheck:1.0.0-RC-1"
+    }
 }
+plugins {
+    id 'org.asciidoctor.convert' version '1.5.8.1'
+}
+apply plugin: 'org.aim42.htmlSanityCheck'
 
 asciidoctorj {
-    version = '1.5.4'
+    version = '1.5.6'
 }
 
 apply from:"https://raw.githubusercontent.com/grails/grails-guides/6.0.x/gradle/guide-build.gradle"
 
+htmlSanityCheck {
+    sourceDir = new File("${project.buildDir}/docs")
+}
+publishGuide.finalizedBy(htmlSanityCheck)
 
 /*
 subprojects.each {
