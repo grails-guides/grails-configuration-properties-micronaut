@@ -24,6 +24,7 @@ htmlSanityCheck {
 }
 publishGuide.finalizedBy(htmlSanityCheck)
 
+/*
 subprojects.each {
     apply from: 'gradle/testVerbose.gradle'
-}
+}*/
